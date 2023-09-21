@@ -1,6 +1,7 @@
 import './App.css';
 import { Greet } from './components/Greet';
 import { PersonList } from './components/PersonList';
+import { Person } from './components/Person';
 
 function App() {
   const personName = {
@@ -27,7 +28,7 @@ function App() {
     <div className='App'>
      <Greet name='John' messageCount={20} isLoggedIn={false}/>
      <Person name={personName} />
-     <PersonList names={nameList}
+     <PersonList names={nameList} />
     </div>
   )
 }
